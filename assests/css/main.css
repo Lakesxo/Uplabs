@@ -1,0 +1,104 @@
+@import url(//db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Circular Std Medium;
+    background: linear-gradient(180deg, rgba(245, 241, 255, 0.8) 0%, rgba(245, 241, 255, 0) 95.8%);
+    overflow-x: hidden;
+    z-index: 5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+.links {
+    width: 50%;
+}
+ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+li {
+    color:#152C5B;
+    font-size: 15px;
+    opacity: 0.8;
+}
+span.login {
+    color: #0045FF;
+}
+button {
+    cursor: pointer;
+    background-color: #0045FF;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 0;
+    padding: 17px 27px 17px 27px;
+    font-family: Circular Std Medium;
+    font-size: 14px;
+}
+li:hover, span.login:hover {
+    transition: all 0.5s ease-in-out;
+    color: #0038d1;
+}
+button:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #0038d1;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text h1 {
+    font-weight: 900;
+    font-size: 56px;
+    color: #152C5B;
+    width: 52%;
+    margin-bottom: 10px;
+}
+.text p {
+    color: #152C5B;
+    opacity: 0.5;
+    font-size: 18px;
+}
+.video_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 200px;
+}
+.vid_cover {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.025);
+    border-radius: 32px;
+    border: 2px solid #FFFFFF;
+}
+iframe {
+    border-radius: 20px;
+    border: 0;
+}
+.right_ellipse {
+    position: absolute;
+    width: 20px;
+    left: 700px;
+    top: -50px;
+    z-index: -5;
+}
+.left_ellipse {
+    position: absolute;
+    width: 1100px;
+    left: 0px;
+    top: 450px; 
+    z-index: -5;
+}
