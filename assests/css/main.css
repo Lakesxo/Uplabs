@@ -36,7 +36,9 @@ div.logo {
 div#navbarsExample07XL.collapse.navbar-collapse {
     width: 50%;
 }
-
+button.navbar-toggler:focus {
+    outline: 0;
+}
 
 button.navbar-toggler:hover {
     background-color: transparent;
