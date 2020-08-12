@@ -7,15 +7,46 @@ body {
     overflow-x: hidden;
     z-index: 5;
 }
-header {
+div.container-xl {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 80px;
     padding-right: 60px;
+    margin: 0;
+    max-width: inherit;
+}
+header {
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+ul.navbar-nav.mr-auto {
+    display: flex;
+    margin-right: 0 !important;
+    width: 100%;
+    align-items: center;
+}
+div.container-xl {
+    display: flex;
+    width: 100%;
+}
+div.logo {
+    width: 50%;
+}
+div#navbarsExample07XL.collapse.navbar-collapse {
+    width: 50%;
+}
+
+
+button.navbar-toggler:hover {
+    background-color: transparent;
+}
+.navbar-expand-lg {
+    width: 100%;
+    padding: 0;
 }
 .links {
-    width: 50%;
+    width: 100%;
 }
 ul{
     padding-left: 0;
@@ -54,6 +85,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+li.log a {
+    text-decoration: none;
+}
 .text {
     text-align: center;
     display: flex;
@@ -66,17 +100,19 @@ a {
     color: #152C5B;
     width: 52%;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 .text p {
     color: #152C5B;
     opacity: 0.5;
     font-size: 18px;
+    margin-top: 10px;
 }
 .video_section {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
 }
 .vid_cover {
     padding: 25px;
@@ -101,4 +137,166 @@ iframe {
     left: 0px;
     top: 450px; 
     z-index: -5;
+}
+
+/* Media Queries */
+@media (min-width: 1600px) {
+    .right_ellipse {
+        display: none;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+    .right_ellipse {
+        left: 900px;
+    }
+}
+@media (max-width: 1065px) {
+    .log {
+        padding: 8px;
+    }
+    .buton {
+        padding: 8px;
+    }
+    li.nav-item, li.log, button {
+        font-size: 18px;
+    }
+    .logo {
+        width: 20%;
+    }
+    div#navbarsExample07XL.collapse.navbar-collapse {
+        width: 80%;
+    }
+    .text h1 {
+        width: 65%;
+        font-size: 42px;
+        margin-top: 70px;
+    }
+    .text p {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .right_ellipse img {
+        width: 500px;
+        height: 600px;
+    }
+    .right_ellipse {
+        left: 525px;
+    }
+    .left_ellipse {
+        width: 500px;
+        top: 550px
+    }
+}
+@media (min-width: 781px) and (max-width: 990px) {
+    .right_ellipse {
+        display: none;
+    }
+    header {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media (min-width: 601px) and (max-width: 780px) {
+    header {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .log {
+        padding: 8px;
+    }
+    li.nav-item, li.log, button {
+        font-size: 18px;
+    }
+    .buton {
+        padding: 8px;
+    }
+    .right_ellipse {
+        display: none;
+    }
+    .text h1 {
+        width: 75%;
+        font-size: 36px;
+        text-align: left;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    .text p {
+        text-align: left;
+        padding-left: 30px;
+        margin-top: 25px;
+    }
+    .text {
+        text-align: left;
+    }
+    .left_ellipse {
+        width: 200px;
+        top: 290px;
+    }
+    .left_ellipse img {
+        width: 520px;
+        height: 500px;
+    }
+    .video_section {
+        margin-top: 30px;
+        padding-bottom: 200px;
+    }
+    iframe {
+        width: 500px;
+        height: 340px;
+    }
+}
+@media (max-width: 600px ) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .log {
+        padding: 8px;
+    }
+    .buton {
+        padding: 8px;
+    }
+    li.nav-item, li.log, button {
+        font-size: 17px;
+    }
+    .right_ellipse {
+        display: none;
+    }
+    .left_ellipse img {
+        width: 320px;
+        height: 500px;
+    }
+    .left_ellipse {
+        width: 200px;
+        top: 200px;
+    }
+    .text h1 {
+        width: 90%;
+        font-size: 32px;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .text p {
+        text-align: left;
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+    iframe {
+        width: 300px;
+        height: 240px;
+    }
+    .video_section {
+        padding-bottom: 150px;
+    }
+}
+@media (max-width: 350px) {
+    .text h1 {
+        font-size: 28px;
+        padding-left: 13px;
+    }
+    iframe {
+        width: 240px;
+        height: 180px;
+    }
 }
