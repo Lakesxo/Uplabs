@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assests/css/main.css">
     <link rel="icon" href="./assests/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-xl">
-                <div class="logo"><a href="#"><img src="./assests/images/icon.png"></a></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="logo" data-aos="fade-right" data-aos-anchor="#trigger-left" data-aos-anchor-placement="top-top"><a href="#"><img src="./assests/images/icon.png"></a></div>
+                <button class="navbar-toggler" data-aos="fade-left" data-aos-anchor="#trigger-right"
+                data-aos-anchor-placement="top-center" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><img src="./assests/images/hamburger.svg"></span>
                 </button>
           
                 <div class="collapse navbar-collapse links" id="navbarsExample07XL">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto" data-aos="fade-left" data-aos-anchor="#trigger-right"
+                    data-aos-anchor-placement="top-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -34,7 +37,7 @@
                     <li class="log">
                         <a href="#"><span class="login">Login</span></a>
                     </li>
-                    <li class="buton">
+                    <li class="buton" data-aos="fade-down" data-aos-delay="600">
                         <a href="#"><button>Get Started</button></a>
                     </li>
                     </ul>
@@ -43,10 +46,10 @@
         </nav>
     </header>
     <div class="text">
-        <h1>Keep Track of Your Benefit at Pay Platform Payment</h1>
-        <p>Payment and budgeting digital business made simple</p>
+        <h1 data-aos="zoom-in" data-aos-delay="600">Keep Track of Your Benefit at Pay Platform Payment</h1>
+        <p data-aos="fade-left" data-aos-delay="1000">Payment and budgeting digital business made simple</p>
     </div>
-    <div class="video_section">
+    <div class="video_section" data-aos="slide-up" data-aos-delay="1200">
         <div class="vid_cover">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -62,5 +65,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        delay: 5
+    })
+    </script>
 </body>
 </html>
